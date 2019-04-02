@@ -6,6 +6,7 @@
 resource "aws_default_vpc" "default" {
     tags {
         Name = "Default VPC"
+
     }
 }
 
@@ -22,6 +23,7 @@ resource "aws_default_subnet" "default_az2" {
 
     tags {
         Name = "Default subnet for ${var.AWS_REGION}b"
+        k = "1"
     }
 }
 resource "aws_default_subnet" "default_az3" {

@@ -13,11 +13,11 @@ resource "aws_instance" "example" {
 
   # user data
   user_data = "${data.template_cloudinit_config.cloudinit-example.rendered}"
-
+  
 }
 
 resource "aws_ebs_volume" "ebs-volume-1" {
-    availability_zone = "ap-northeast-2a"
+    availability_zone = "eu-west-1a"
     size = 20
     type = "gp2" 
     tags {

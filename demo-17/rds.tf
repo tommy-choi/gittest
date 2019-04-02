@@ -1,5 +1,5 @@
 resource "aws_db_subnet_group" "mariadb-subnet" {
-    name = "mariadb-subnet"
+    name = "mariadb-subnet-nowage"
     description = "RDS subnet group"
     subnet_ids = ["${aws_subnet.main-private-1.id}","${aws_subnet.main-private-2.id}"]
 }

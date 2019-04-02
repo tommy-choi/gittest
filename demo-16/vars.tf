@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "ap-northeast-2"
+  default = "eu-west-1"
 }
 variable "PATH_TO_PRIVATE_KEY" {
   default = "mykey"
@@ -12,6 +12,7 @@ variable "AMIS" {
   default = {
     us-east-1 = "ami-13be557e"
     us-west-2 = "ami-06b94666"
+    eu-west-1 = "ami-0b6eafddaa44ab1ae"
     ap-northeast-2 = "ami-79815217"
   }
 }
