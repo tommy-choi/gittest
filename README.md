@@ -36,3 +36,52 @@ c4-docker_EcrContainerRegistry                  | Using ECR - The EC2 Container 
 c5-docker_EcsContainerService                   | Using ECS - The EC2 Container Service
 c6-docker_EcrEcsWithJenkinsInACompleteWorkflow  | Using ECR/ECS with Jenkins in a complete workflow
 c7-module2                                      | Using ECS + ALB in 4 modules to show how developing terraform modules work
+
+
+
+
+
+## Old Chapter to New Chapter
+OLD                  | NEW
+---------------------|------------------------------------------
+FirstSteps           |  01-FirstSteps              
+demo-1b              |  02-FirstStepsEC2-basic          
+demo-1               |  03-FirstStepsEC2         
+demo-2               |  04-Provisioner-basic         
+demo-2               |  05-Provisioner         
+demo-3               |  06-ExecutingScriptLocally         
+demo-4               |  07-Outputting         
+demo-5               |  08-DataSource         
+demo-6               |  09-Modules         
+demo-7               |  10-AwsVpc         
+demo-8               |  11-Ec2VpcSecuritygroup         
+demo-9               |  12-Ec2EBS         
+demo-10              |  13-UserdataAndCloudInit          
+demo-11              |  14-Route53          
+demo-12              |  15-RDS          
+demo-13              |  16-IAM          
+demo-14              |  17-IAMRolesWithS3Bucket          
+demo-15              |  18-Autoscaling          
+demo-16              |  19-AutoscalingWithELB          
+demo-17              |  20-ElasticBeanstalk          
+demo-18              |  21-InterpolationsVPCModule          
+demo-18b             |  22-ProjectStructure           
+packer-demo          |  23-packer                      
+jenkins-packer-demo  |  24-jenkins-packer                       
+eks-demo             |  c1-EKS                       
+demo-2b              |  c2-UsingProvisionerOnWindowsInstance          
+dockerdemo-0         |  c3-docker_local               
+dockerdemo-1         |  c4-docker_EcrContainerRegistry               
+dockerdemo-2         |  c5-docker_EcsContainerService               
+dockerdemo-3         |  c6-docker_EcrEcsWithJenkinsInACompleteWorkflow               
+module-demo          |  c7-module2                                                             
+
+
+
+
+
+
+
+
+
+
