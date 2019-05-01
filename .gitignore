@@ -1,13 +1,13 @@
 
 
 # for TerraformFile
-*/terraform.tfvars
-*/terraform.tfstate
-*/terraform.tfstate.backup
-*/.terraform
-*/mykey.pem
-*/mykey
-*/mykey.pub
+terraform.tfvars
+terraform.tfstate
+terraform.tfstate.backup
+.terraform
+mykey.pem
+mykey
+mykey.pub
 
 # Vagrant file
 .vagrant
