@@ -4,32 +4,36 @@
 # Update by Steve J.South [NamJungGu] <nowage@gmail.com>
 
 # Demo overview
-Demo Directory        | Description
-----------------------| -------------
-first-steps           | First steps
-demo-1                | First steps: Launching an EC2 instance
-demo-2                | Using provisioner
-demo-2b               | Using provisioner on a Windows instance
-demo-3                | Executing script locally
-demo-4                | Outputting
-demo-5                | Data Source
-demo-6                | Modules
-demo-7                | AWS VPC
-demo-8                | EC2 instance within VPC with securitygroup
-demo-9                | EC2 instance with EBS volumes
-demo-10               | Userdata and cloudinit
-demo-11               | Route53 (DNS)
-demo-12               | RDS
-demo-13               | IAM
-demo-14               | IAM Roles with S3 bucket
-demo-15               | Autoscaling
-demo-16               | Autoscaling with ELB (Elastic Load Balancer)
-demo-17               | Elastic Beanstalk PHP 7 stack with RDS
-demo-18               | Interpolations, VPC module
-demo-18b              | Project structure, best practices
-packer-demo           | Build AMIs with Packer
-jenkins-packer-demo   | Demo with jenkins and Packer
-docker-demo-1         | Using ECR - The EC2 Container Registry
-docker-demo-2         | Using ECS - The EC2 Container Service
-docker-demo-3         | Using ECR/ECS with Jenkins in a complete workflow
-module-demo           | Using ECS + ALB in 4 modules to show how developing terraform modules work
+Demo Directory                                  | Description
+------------------------------------------------| -------------
+01-FirstSteps                                   | First steps
+02-FirstStepsEC2-basic                          | First steps: Launching an EC2 instance - Simple Version
+03-FirstStepsEC2                                | First steps: Launching an EC2 instance
+04-Provisioner-basic                            | Using provisioner - Simple Version
+05-Provisioner                                  | Using provisioner
+06-ExecutingScriptLocally                       | Executing script locally
+07-Outputting                                   | Outputting
+08-DataSource                                   | Data Source
+09-Modules                                      | Modules
+10-AwsVpc                                       | AWS VPC
+11-Ec2VpcSecuritygroup                          | EC2 instance within VPC with securitygroup
+12-Ec2EBS                                       | EC2 instance with EBS volumes
+13-UserdataAndCloudinit                         | Userdata and cloudinit
+14-Route53                                      | Route53 (DNS)
+15-RDS                                          | RDS
+16-IAM                                          | IAM
+17-IAMRolesWithS3Bucket                         | IAM Roles with S3 bucket
+18-Autoscaling                                  | Autoscaling
+19-AutoscalingWithELB                           | Autoscaling with ELB (Elastic Load Balancer)
+20-ElasticBeanstalk                             | Elastic Beanstalk PHP 7 stack with RDS
+21-InterpolationsVPCModule                      | Interpolations, VPC module
+22-ProjectStructure                             | Project structure, best practices
+23-packer                                       | Build AMIs with Packer
+24-jenkins-packer                               | Demo with jenkins and Packer
+c1-EKS                                          | Demo with EKS
+c2-UsingProvisionerOnWindowsInstance            | Using provisioner on a Windows instance
+c3-docker_local                                 | Using Local Docker 
+c4-docker_EcrContainerRegistry                  | Using ECR - The EC2 Container Registry
+c5-docker_EcsContainerService                   | Using ECS - The EC2 Container Service
+c6-docker_EcrEcsWithJenkinsInACompleteWorkflow  | Using ECR/ECS with Jenkins in a complete workflow
+c7-module2                                      | Using ECS + ALB in 4 modules to show how developing terraform modules work

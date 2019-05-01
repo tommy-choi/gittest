@@ -1,10 +1,13 @@
-# # for TerraformFile
-# */terraform.tfvars
-# */terraform.tfstate
-# */terraform.tfstate.backup
-# */.terraform
-# ./mykey*
 
+
+# for TerraformFile
+*/terraform.tfvars
+*/terraform.tfstate
+*/terraform.tfstate.backup
+*/.terraform
+*/mykey.pem
+*/mykey
+*/mykey.pub
 
 # Vagrant file
 .vagrant
@@ -45,3 +48,7 @@ __pycache__
 **/.ipynb_checkpoints
 **/.ipynb_checkpoints/*.ipynb
 
+
+# Exclude
+!mykey
+!mykey.pub
