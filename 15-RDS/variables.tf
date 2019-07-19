@@ -38,7 +38,7 @@ variable "database_name" {
 
 variable "name" {
   description = "Name of the database"
-  default     = "terratest-example"
+  default     = "terratest-example-nowage"
 }
 
 variable "engine_name" {
