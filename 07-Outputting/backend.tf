@@ -1,6 +1,6 @@
 terraform { 
   backend "s3" { 
-    bucket= "nowage-11"
+    bucket= "nowage1818"
     key = "07-Outputting"
   } 
 } 
