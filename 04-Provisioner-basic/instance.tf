@@ -24,7 +24,7 @@ resource "aws_instance" "example" {
 }
 
 provider "aws" {
-    region = "eu-west-1"
+    region = "ap-northeast-2"
 }
 
 

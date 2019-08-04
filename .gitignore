@@ -5,8 +5,8 @@ terraform.tfvars
 */terraform.tfstate.backup
 */.terraform
 */mykey.pem
-*/mykey
-*/mykey.pub
+mykey
+mykey.pub
 
 # Vagrant file
 .vagrant
