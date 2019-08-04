@@ -25,7 +25,7 @@ variable "AMIS" {
   default = {
     us-east-1 = "ami-13be557e"
     us-west-2 = "ami-06b94666"
-    ap-northeast-2 = "ami-79815217"
+    ap-northeast-2 = "ami-ada823d3"
   }
 }
 variable "INSTANCE_DEVICE_NAME" {

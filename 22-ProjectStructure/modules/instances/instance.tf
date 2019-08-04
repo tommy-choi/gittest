@@ -74,7 +74,7 @@ resource "aws_security_group" "allow-ssh" {
   }
 }
 
-resource "aws_key_pair" "" {
+resource "aws_key_pair" "mykey" {
   key_name   = "-${var.ENV}"
   public_key = "${file("${path.root}/${var.PATH_TO_PUBLIC_KEY}")}"
 }

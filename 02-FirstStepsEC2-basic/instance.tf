@@ -1,6 +1,6 @@
 
 resource "aws_instance" "example" {
-  ami = "ami-79815217"
+  ami = "ami-ada823d3"
   instance_type = "t2.micro"
   key_name = "${aws_key_pair.mykey.key_name}"
   connection {
