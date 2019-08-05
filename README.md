@@ -1,4 +1,4 @@
-# terraform-course
+# terraform-course.
 * Orignal Source form : [https://github.com/wardviaene/terraform-course](https://github.com/wardviaene/terraform-course) for  [Udemy course about Terraform](https://www.udemy.com/learn-devops-infrastructure-automation-with-terraform/?couponCode=TERRAFORM_GIT)
 * Update by Steve J.South [NamJungGu] <nowage@gmail.com>
 
