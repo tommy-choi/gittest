@@ -13,7 +13,7 @@ resource "aws_key_pair" "mykey" {
 }
 
 resource "aws_instance" "example" {
-  ami = "ami-03746875d916becc0"
+  ami = "ami-0fd02cb7da42ee5e0"
   instance_type = "t2.micro"
   key_name = "${aws_key_pair.mykey.key_name}"
 
