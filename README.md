@@ -9,11 +9,11 @@
 # Demo overview
 Demo Directory                                  | Description
 ------------------------------------------------| -------------
-01-FirstSteps                                   | First steps
-02-FirstStepsEC2-basic                          | First steps: Launching an EC2 instance - Simple Version
-03-FirstStepsEC2                                | First steps: Launching an EC2 instance
-04-Provisioner-basic                            | Using provisioner - Simple Version
-05-Provisioner                                  | Using provisioner
+01-FirstSteps                                   | First steps : One File Version
+02-FirstSteps_files                             | First steps : File Separate
+03-Provisioner_basic                            | Enable Login : One File Version
+04-Provisioner_files                            | Enable Login : File Separate
+05-Provisioner                                  | Using provisioner : Script 
 06-ExecutingScriptLocally                       | Executing script locally
 07-Outputting                                   | Outputting
 08-DataSource                                   | Data Source
@@ -35,10 +35,8 @@ Demo Directory                                  | Description
 24-jenkins-packer                               | Demo with jenkins and Packer
 c1-EKS                                          | Demo with EKS
 c2-UsingProvisionerOnWindowsInstance            | Using provisioner on a Windows instance
-c3-docker_local                                 | Using Local Docker 
+c3-docker_local                                 | Using Local Docker
 c4-docker_EcrContainerRegistry                  | Using ECR - The EC2 Container Registry
 c5-docker_EcsContainerService                   | Using ECS - The EC2 Container Service
 c6-docker_EcrEcsWithJenkinsInACompleteWorkflow  | Using ECR/ECS with Jenkins in a complete workflow
 c7-module2                                      | Using ECS + ALB in 4 modules to show how developing terraform modules work
-
-
