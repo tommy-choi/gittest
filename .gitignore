@@ -1,10 +1,9 @@
 # for TerraformFile
 terraform.tfvars
-*/terraform.tfvars
-*/terraform.tfstate
-*/terraform.tfstate.backup
-*/.terraform
-*/mykey.pem
+terraform.tfstate
+terraform.tfstate.backup
+.terraform
+mykey.pem
 mykey
 mykey.pub
 

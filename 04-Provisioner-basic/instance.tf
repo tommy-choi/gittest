@@ -8,27 +8,21 @@
 # terraform destroy -auto-approve
 
 resource "aws_key_pair" "mykey" {
-  key_name = "mykey"
-  public_key = "${file("mykey.pub")}"
+  key_name   = "mykey"
+  public_key = file("mykey.pub")
 }
 
 resource "aws_instance" "example" {
-  ami = "ami-0fd02cb7da42ee5e0"
+  ami           = "ami-0dad359ff462124ca"
   instance_type = "t2.micro"
-  key_name = "${aws_key_pair.mykey.key_name}"
+  key_name      = aws_key_pair.mykey.key_name
 
   connection {
-    user = "ubuntu"
-    private_key = "${file("mykey")}"
+    user        = "ubuntu"
+    private_key = file("mykey")
   }
 }
 
 provider "aws" {
-    region = "ap-northeast-2"
+  region = "eu-west-1"
 }
-
-
-
-
-
-
