@@ -8,7 +8,7 @@
 variable "AWS_ACCESS_KEY" {}
 variable "AWS_SECRET_KEY" {}
 variable "AWS_REGION" {
-  default = "ap-northeast-2"
+  default = "eu-west-1"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ variable "AWS_REGION" {
 # ---------------------------------------------------------------------------------------------------------------------
 
 variable "username" {
-  default = "root"
+  default     = "root"
   description = "Master username of the DB"
 }
 
@@ -27,7 +27,7 @@ variable "password" {
 }
 
 variable "database_name" {
-  default="mydb"
+  default     = "mydb"
   description = "Name of the database to be created"
 }
 
@@ -75,6 +75,3 @@ variable "license_model" {
   default     = "general-public-license"
   description = "License model of the DB instance"
 }
-
-
-
