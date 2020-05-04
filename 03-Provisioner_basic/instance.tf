@@ -13,9 +13,6 @@
 resource "aws_key_pair" "mykey" {
   key_name   = "mykey"
   public_key = file("~/mykey.pub")
-  lifecycle {
-    ignore_changes = [tags]
-  }
 }
 
 resource "aws_instance" "example" {
@@ -27,8 +24,17 @@ resource "aws_instance" "example" {
     user        = "ubuntu"
     private_key = file("mykey")
   }
+  tags = {
+    #Name = format("MyInstance%s", var.V1)
+    #Name = "MyInstance${var.V1}"
+    Name = join("", ["MyInstance", var.V1])
+  }
 }
 
 provider "aws" {
   region = "eu-west-1"
+}
+
+variable "V1" {
+  default = "V1"
 }

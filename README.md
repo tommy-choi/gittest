@@ -17,7 +17,7 @@ Demo Directory                                  | Description
 06-ExecutingScriptLocally                       | Executing script locally
 07-Outputting                                   | Outputting : S3
 08-DataSource                                   | Data Source : Security Groups Create
-09-Modules                                      | Modules
+09-Modules                                      | Modules : Consul Module from github
 10-AwsVpc                                       | AWS VPC
 11-Ec2VpcSecuritygroup                          | EC2 instance within VPC with securitygroup
 12-Ec2EBS                                       | EC2 instance with EBS volumes
