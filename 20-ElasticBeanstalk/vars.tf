@@ -5,6 +5,6 @@ variable "PATH_TO_PRIVATE_KEY" {
   default = "mykey"
 }
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "mykey.pub"
+  default = "~/mykey.pub"
 }
 variable "RDS_PASSWORD" {}

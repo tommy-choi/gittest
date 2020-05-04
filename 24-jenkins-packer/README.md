@@ -11,6 +11,6 @@ aws s3 cp amivar.tf s3://terraform-state-a2b62lf/amivar.tf
 cd jenkins-packer-demo
 aws s3 cp s3://terraform-state-a2b62lf/amivar amivar.tf
 touch mykey
-touch mykey.pub
+touch ~/mykey.pub
 terraform apply -auto-approve -var APP_INSTANCE_COUNT=1 -target aws_instance.app-instance
 ```

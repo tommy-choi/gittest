@@ -13,10 +13,10 @@ Demo Directory                                  | Description
 02-FirstSteps_files                             | First steps : File Separate
 03-Provisioner_basic                            | Enable Login : One File Version
 04-Provisioner_files                            | Enable Login : File Separate
-05-Provisioner                                  | Using provisioner : Script 
+05-Provisioner                                  | Using provisioner : Script
 06-ExecutingScriptLocally                       | Executing script locally
-07-Outputting                                   | Outputting
-08-DataSource                                   | Data Source
+07-Outputting                                   | Outputting : S3
+08-DataSource                                   | Data Source : Security Groups Create
 09-Modules                                      | Modules
 10-AwsVpc                                       | AWS VPC
 11-Ec2VpcSecuritygroup                          | EC2 instance within VPC with securitygroup
