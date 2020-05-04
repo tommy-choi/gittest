@@ -4,7 +4,7 @@
 * Update by Steve J.South [NamJungGu] <nowage@gmail.com>
 
 # Todo
-* 모든 실행 zone을 ap-northeast-2로 옮기기, 단, AMI b존에서 작동하는 것으로 바꿀 것.
+* Notes...
 
 # Demo overview
 Demo Directory                                  | Description
