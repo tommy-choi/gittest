@@ -13,7 +13,7 @@ Demo Directory                                  | Description
 02-FirstSteps_files                             | First steps : File Separate
 03-Provisioner_basic                            | Enable Login : One File Version
 04-Provisioner_files                            | Enable Login : File Separate
-05-Provisioner                                  | Using provisioner : Script
+05-Provisioner_Script                           | Using provisioner : Script
 06-ExecutingScriptLocally                       | Executing script locally
 07-Outputting                                   | Outputting : S3
 08-DataSource                                   | Data Source : Security Groups Create
@@ -33,6 +33,7 @@ Demo Directory                                  | Description
 22-ProjectStructure                             | Project structure, best practices
 23-packer                                       | Build AMIs with Packer
 24-jenkins-packer                               | Demo with jenkins and Packer
+c0-MultiInstance                                | Demo for MultiInstance
 c1-EKS                                          | Demo with EKS
 c2-UsingProvisionerOnWindowsInstance            | Using provisioner on a Windows instance
 c3-docker_local                                 | Using Local Docker
