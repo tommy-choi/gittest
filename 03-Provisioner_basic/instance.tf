@@ -24,17 +24,17 @@ resource "aws_instance" "example" {
     user        = "ubuntu"
     private_key = file("mykey")
   }
-  tags = {
-    #Name = format("MyInstance%s", var.V1)
-    #Name = "MyInstance${var.V1}"
-    Name = join("", ["MyInstance", var.V1])
-  }
+  # tags = {
+  #   #Name = format("MyInstance%s", var.V1)
+  #   #Name = "MyInstance${var.V1}"
+  #   Name = join("", ["MyInstance", var.V1])
+  # }
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region     = "eu-west-1"
+  access_key = var.AWS_ACCESS_KEY
+  secret_key = var.AWS_SECRET_KEY
 }
-
-variable "V1" {
-  default = "V1"
-}
+variable "AWS_ACCESS_KEY" {}
+variable "AWS_SECRET_KEY" {}
