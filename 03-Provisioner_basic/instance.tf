@@ -1,12 +1,11 @@
-# aws configure
-# aws ec2 delete-key-pair --key-name mykey
-# cp ../terraform.tfvars ./
-# cp ../mykey* ./
+# cf1) aws configure
+# cf2) aws ec2 delete-key-pair --key-name mykey
+# ssh-keygen -f ~/mykey
 # terraform init
-
+# terraform plan -out /tmp/p.out
 # terraform apply -auto-approve
 # cat terraform.tfstate|grep public_ip
-# ssh -i mykey ubuntu@13.209.73.61
+# ssh -i ~/mykey ubuntu@13.209.73.61
 
 # terraform destroy -auto-approve
 
@@ -25,16 +24,10 @@ resource "aws_instance" "example" {
     private_key = file("mykey")
   }
   tags = {
-    #Name = format("MyInstance%s", var.V1)
-    #Name = "MyInstance${var.V1}"
-    Name = join("", ["MyInstance", var.V1])
+    Name = "My Instance"
   }
 }
 
 provider "aws" {
   region = "eu-west-1"
-}
-
-variable "V1" {
-  default = "V1"
 }
