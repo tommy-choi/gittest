@@ -41,3 +41,32 @@ c4-docker_EcrContainerRegistry                  | Using ECR - The EC2 Container 
 c5-docker_EcsContainerService                   | Using ECS - The EC2 Container Service
 c6-docker_EcrEcsWithJenkinsInACompleteWorkflow  | Using ECR/ECS with Jenkins in a complete workflow
 c7-module2                                      | Using ECS + ALB in 4 modules to show how developing terraform modules work
+
+# Setting for Convenient
+* Root계정에서 실행하세요. 
+```
+## ssh
+echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+
+## EDITOR
+echo "export EDITOR=vi" >> /etc/bash.bashrc
+
+## Alias for Terraform Apply
+cmd='
+terraform destroy -auto-approve
+terraform init
+terraform apply -auto-approve
+cat terraform.tfstate|grep public_ip|grep -v associate
+'
+echo "alias ta=\"echo '$cmd';$cmd\"">>/etc/bash.bashrc
+
+## Alias for Terraform Destroy
+cmd='terraform destroy -auto-approve
+'
+echo "alias td=\"echo '$cmd';$cmd\"">>/etc/bash.bashrc
+
+## Alias for Delete aws Key pair
+cmd='aws ec2 delete-key-pair --key-name mykey
+'
+echo "alias dk=\"echo '$cmd';$cmd\"">>/etc/bash.bashrc
+```
