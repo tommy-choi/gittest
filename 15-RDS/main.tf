@@ -18,8 +18,10 @@ data "aws_subnet_ids" "all" {
 # ---------------------------------------------------------------------------------------------------------------------
 
 resource "aws_db_subnet_group" "example" {
-  name       = var.name
-  subnet_ids = [data.aws_subnet_ids.all.ids]
+  name = var.name
+  # subnet_ids = [data.aws_subnet_ids.all.ids]
+  subnet_ids = data.aws_subnet_ids.all.ids
+  # subnet_ids = ["${data.aws_subnet_ids.*.ids}"]
 
   tags = {
     Name = var.name
